@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     color: var(--clr-black);
 }
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -433,7 +434,7 @@ input[type="checkbox"] {
 }
 
 .links-footer .about-me {
-    display:none;
+    display: none;
 }
 
 
@@ -483,7 +484,6 @@ input[type="checkbox"] {
 
     .title-secondary, .btn-primary{
         font-size: 12px;
-    
     }
     
     .text {
@@ -507,7 +507,6 @@ input[type="checkbox"] {
         max-width: 2vw;
     }
     
-
 }
 
 @media (max-width:845px){
@@ -518,12 +517,8 @@ input[type="checkbox"] {
 
     .links, .links-footer, .container-bottom .text {
         font-size: 10px;
-        grid-gap: 10px
     }
 
-    h2 {
-        font-size: 16px;
-    }
     .dribble-btn {
         max-width: 20vw;
     }
@@ -535,8 +530,7 @@ input[type="checkbox"] {
     }
     .testimonial-card .person {
         grid-template-columns: 1fr;
-        grid-gap:10px;
-        
+        grid-gap:10px;  
     }
 }
 
@@ -546,7 +540,7 @@ input[type="checkbox"] {
         max-width:60%;
     }
     
-    .about-me {
+    .about-me, .icon  {
         display:none;
     }
 
@@ -565,15 +559,12 @@ input[type="checkbox"] {
         justify-items: auto;
     
     }
-    .icon {
-        display: none;
-    }
     #portfolio .btn-primary:hover {
         padding: 10px;
     }
     .dribble-btn {
         max-width: 25vw;
-        font-size:8px;
+        font-size:10px;
         padding: 10px;
     }
     .dribble-view img {
@@ -585,7 +576,6 @@ input[type="checkbox"] {
     }
     .testimonial-cards {
         grid-template-columns: 1fr;
-    
     }
     .testimonial-card .person img {
         max-width: 10vw;
@@ -626,17 +616,18 @@ input[type="checkbox"] {
         justify-self: center;
     }
     
-    .home .intro-img img{
-        max-width:75%;
+    .home .intro-img, 
+    .dribble-view img, 
+    .footer .container-up .logo {
+        display: none;
     }
-
+    .dribble-btn {
+         font-size:8px;
+    }
     .expertise {
         grid-template-rows: 0.25fr 1fr;
     }
-    .dribble-view img{
-        display: none;
-    }
-    
+        
     .testimonial-card img{
         max-width: 15vw;
     }
@@ -648,9 +639,7 @@ input[type="checkbox"] {
         margin:5px;
         font-size:5px;
     }
-    .footer .container-up .logo  {
-        display:none;
-    }
+    
     .container-up {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
